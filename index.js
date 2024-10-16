@@ -17,7 +17,7 @@ function loadTasks() {
     const todoItem = document.createElement("li");
 
     todoItem.innerHTML = `
-      <div class="taskItem">
+      <div class="taskItem" style="background-color: ${todo.color};">
         <div class="task ${todo.completed ? "completed" : ""}">
           <input type="checkbox" class="checkbox" ${
             todo.completed ? "checked" : ""
@@ -26,7 +26,7 @@ function loadTasks() {
         </div>
         <div class="icons">
           <img src="./img/edit.png" alt="Edit Task" onClick="editTask(${index})"/>
-          <img src="./img/bin.png" alt="Delete Task" onClick="deleteTask(${index})"/>
+          <img src="./img/delete.png" alt="Delete Task" onClick="deleteTask(${index})"/>
         </div>
       </div>
     `;
@@ -44,18 +44,22 @@ function loadTasks() {
 let editIndex = null; // Track the task being edited
 function addTasks() {
   const inputField = document.getElementById("todo-input");
+  const colorSelector = document.getElementById("color-selector");
   const todoText = inputField.value.trim();
+  const selectedColor = colorSelector.value;
 
   if (todoText) {
     const todos = JSON.parse(localStorage.getItem("todos")) || [];
 
     if (editIndex !== null) {
       todos[editIndex].text = todoText;
+      todos[editIndex].color = selectedColor;
       editIndex = null;
     } else {
       todos.push({
         text: todoText,
         completed: false,
+        color: selectedColor,
       });
     }
 
@@ -63,6 +67,7 @@ function addTasks() {
     loadTasks();
     updateTodoCounter();
     inputField.value = "";
+    colorSelector.value = "#ff5733";
     document.getElementById("add-btn").textContent = "+";
   }
 }
