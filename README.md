@@ -2,6 +2,8 @@
 
 This project is a simple **Todo App** built with JavaScript that allows users to add, edit, delete, and mark tasks as complete. It stores tasks locally using **Local Storage** to persist data between sessions. The app also features a colorful task interface, progress tracking, and a fun confetti animation when all tasks are completed.
 
+![alt text](/img/todo.png)
+
 ## Features
 
 - **Add New Tasks**: Users can add tasks with custom background colors.
