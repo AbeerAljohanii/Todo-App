@@ -2,7 +2,7 @@
 
 This project is a simple **Todo App** built with JavaScript that allows users to add, edit, delete, and mark tasks as complete. It stores tasks locally using **Local Storage** to persist data between sessions. The app also features a colorful task interface, progress tracking, and a fun confetti animation when all tasks are completed.
 
-![alt text](/img/todo.png)
+![Todo interface](/img/todo.png)
 
 ## Features
 
@@ -40,7 +40,7 @@ This project is a simple **Todo App** built with JavaScript that allows users to
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/AbeerAljohanii/Todo-App.git
    ```
 2. Open the `index.html` file in your browser.
 3. Start adding tasks, marking them as complete, and manage your todo list!
@@ -53,7 +53,7 @@ This project is a simple **Todo App** built with JavaScript that allows users to
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the MIT License.
 
 ---
 
