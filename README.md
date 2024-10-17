@@ -1,53 +1,58 @@
-# Todo App
+# Todo App with Local Storage & Confetti Celebration 🎉
 
-This project aims to build a to do list application by applying HTML, CSS and Javascript. The application allows users to manage their tasks effectively.
+This project is a simple **Todo App** built with JavaScript that allows users to add, edit, delete, and mark tasks as complete. It stores tasks locally using **Local Storage** to persist data between sessions. The app also features a colorful task interface, progress tracking, and a fun confetti animation when all tasks are completed.
 
-## Level 1: Todo App Basic Requirements
+## Features
 
-In this level, the application includes the following features:
+- **Add New Tasks**: Users can add tasks with custom background colors.
+- **Edit Existing Tasks**: Tasks can be modified by clicking the edit icon.
+- **Delete Tasks**: Tasks can be deleted individually using the delete icon.
+- **Mark Tasks as Complete**: Users can mark tasks as completed by checking the checkbox next to the task.
+- **Progress Bar**: Tracks the number of completed tasks out of the total tasks.
+- **Confetti Celebration**: A confetti animation appears when all tasks are marked as complete.
 
-1. Adding a Todo:
+## How it Works
 
-   - Display an input field where users can enter a new todo item.
-   - Include an "Add" button to add the entered todo item to the list.
+1. **Task Storage**: Tasks are stored in the browser's Local Storage, ensuring data is retained between page refreshes.
+2. **Dynamic Task List**: The task list is dynamically updated based on user actions, with real-time feedback.
+3. **Progress Tracking**: A progress bar at the top of the page shows the percentage of completed tasks.
+4. **Confetti**: When all tasks are completed, a confetti animation is triggered to celebrate the user's achievement.
 
-2. Rendering Todo List:
+## Project Structure
 
-   - Render the list of todos on the screen.
-   - Each todo item should display a checkbox and the task description.
+📂 todo-app  
+├── 📄 index.html — Main HTML file  
+├── 📄 index.js — JavaScript file for app logic  
+├── 📄 styles.css — CSS file for styling  
+├── 📂 img/ — Folder containing images for edit and delete icons
 
-3. Completing a Todo:
+## Technologies Used
 
-   - When a checkbox is clicked, mark the corresponding todo item as complete.
-   - Visually indicate the completion status of each todo item.
+- **HTML5**: For the basic structure of the app.
+- **CSS3**: For styling and layout.
+- **JavaScript**: For handling the functionality, task management, and interactions.
+- **Local Storage**: To store tasks locally and persist data across sessions.
+- **Confetti.js**: A confetti animation library for celebrations when all tasks are complete.
 
-4. Deleting a Todo:
-   - Implement a "Delete" button next to each todo item.
-   - When the button is clicked, remove the corresponding todo item from the list.
+## How to Use
 
-## Level 2: Todo App Additional Requirements
+1. Clone the repository.
+   ```bash
+   git clone https://github.com/yourusername/todo-app.git
+   ```
+2. Open the `index.html` file in your browser.
+3. Start adding tasks, marking them as complete, and manage your todo list!
 
-In addition to the basic requirements, the application enhances its functionality with the following features:
+## Future Improvements
 
-1. Editing a Todo:
+- **Filter Tasks**: Add filtering options to view only completed or incomplete tasks.
+- **Due Dates**: Implement a feature to set due dates for tasks.
+- **Category Support**: Allow users to categorize tasks.
 
-   - Implement an "Edit" button next to each todo item.
-   - When the button is clicked, allow users to update the task description of the corresponding todo.
+## License
 
-2. Todo Counter:
+This project is open-source and available under the [MIT License](LICENSE).
 
-   - Include a counter that displays the total number of todo items.
-   - Display the number of completed items as well.
+---
 
-## Level 3: Todo App Bonus Requirements (Optional)
-
-If you finish the previous requirements before the deadline, you can tackle the following bonus tasks:
-
-1. Persistent Storage:
-   - Add the ability to persist todo items using local storage.
-   - Ensure that the list remains intact even after the page is refreshed.
-
-`Please note that the additional and bonus requirements are  optional and can be completed if you have additional time `
-
-**_DEADLINE THURSDAY 17/10/2014 at 5pm_**
-Happy coding!
+Enjoy using this Todo App! Feel free to contribute or suggest new features. 😊
